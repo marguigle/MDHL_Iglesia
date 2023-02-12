@@ -20,7 +20,7 @@ h1 {
   position: relative;
   top: 20px;
   left: 20px;
-  font-size: xx-large;
+  font-size: 3rem;
 }
 div > h2 {
   background-color: black;
