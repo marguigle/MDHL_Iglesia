@@ -81,7 +81,7 @@ section > h3 {
 section > p {
   font-size: 1.2em;
 }
-#image_1 {
+.image {
   width: 500px;
   position: relative;
   left: 100px;
@@ -89,7 +89,15 @@ section > p {
   border: 3px solid black;
   border-radius: 3px;
 }
-#image_1:hover {
+.image:hover {
   transition: 5s;
   transform: translate(400px);
+}
+#image_3 {
+  position: relative;
+  top: 200px;
+}
+#contact {
+  position: relative;
+  top: -80px;
 }
