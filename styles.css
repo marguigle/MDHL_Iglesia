@@ -37,10 +37,16 @@ h2 {
   left: 870px;
   top: 220px;
 }
+#imgLogo:hover {
+  transition: 5s;
+  transform: translate(-730px);
+}
 nav {
   width: 50%;
 }
 nav > a {
+  position: relative;
+  top: 50px;
   display: block;
   text-decoration: none;
   background: #000;
@@ -52,12 +58,13 @@ nav > a {
   text-align: center;
   font-size: x-large;
   color: coral;
+
   transition: 1s;
   border: #000, solid, 1px;
 }
 
 a:hover {
-  color: rgb(16, 15, 1);
+  color: white;
   background-color: rgb(233, 7, 7);
 }
 section {
@@ -74,9 +81,21 @@ section > h3 {
   position: relative;
   letter-spacing: normal;
   bottom: 0%;
-  border: #000, solid, 0.5px;
-  border-radius: 50%;
+  /* border: #000, solid, 0.5px;
+  border-radius: 50%; */
 }
 section > p {
   font-size: 1.2em;
+}
+#image_1 {
+  width: 500px;
+  position: relative;
+  left: 100px;
+  bottom: 100px;
+  border: 3px solid black;
+  border-radius: 3px;
+}
+#image_1:hover {
+  transition: 5s;
+  transform: translate(400px);
 }
