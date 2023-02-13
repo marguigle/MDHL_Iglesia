@@ -60,7 +60,7 @@ nav > a {
   color: coral;
 
   transition: 1s;
-  border: #000, solid, 1px;
+  border: #000 solid 1px;
 }
 
 a:hover {
