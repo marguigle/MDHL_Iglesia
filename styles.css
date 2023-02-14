@@ -66,9 +66,10 @@ nav > a {
   text-align: center;
   font: size 1.2em;
   color: coral;
+  box-shadow: #615d5d 0.3em 0.5em;
 
   transition: 1s;
-  border: #000 solid 1px;
+  border: #2d2a2a solid 1px;
 }
 
 a:hover {
@@ -97,6 +98,7 @@ section > p {
   width: 500px;
   border: 3px solid black;
   border-radius: 3px;
+  box-shadow: gray 0.4em 0.9em;
 }
 .image:hover {
   transition: 5s;
