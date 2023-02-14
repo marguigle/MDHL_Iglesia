@@ -8,6 +8,8 @@ body {
   background-color: rgb(213, 215, 216);
 }
 header {
+  display: flex;
+  justify-content: space-between;
   background-image: url(./assets/design1_image1.jpg);
 
   width: 100vw;
@@ -16,12 +18,17 @@ header {
 }
 h1 {
   color: white;
-  padding: 10px 0 0 20px;
+  padding: 10px 0 0 0px;
   position: relative;
   top: 20px;
   left: 20px;
   font-size: 3rem;
   text-shadow: #000 0.1em 0.1em;
+}
+#imgLogo {
+  height: 30vh;
+
+  align-self: flex-end;
 }
 div > h2 {
   background-color: black;
@@ -32,43 +39,51 @@ div > h2 {
 h2 {
   padding: 0.6rem;
 }
-#imgLogo {
-  width: 10%;
-  position: relative;
-  left: 870px;
-  top: 220px;
-}
+
 #imgLogo:hover {
-  transition: 5s;
-  transform: translate(-730px);
+  transition: 2s;
+  transform: translate(-1000px);
 }
 
 main {
+  width: 100vw;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
+
+.main-about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 nav {
+  width: 40px;
   display: flex;
   flex-direction: column;
-  width: 30vw;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 2rem;
+}
+.nav-about {
+  display: flex;
+
+  width: 50vw;
 }
 nav > a {
   text-decoration: none;
   background: #000;
   transition: 1s;
-  width: 50%;
-  margin: 40px 0px 0px 20px;
+  width: 15vw;
+  margin: 0;
   padding: 0.5rem;
   border-radius: 5px;
   text-align: center;
   font: size 1.2em;
   color: coral;
   box-shadow: #615d5d 0.3em 0.5em;
-
-  transition: 1s;
+  transition: 0.5s;
   border: #2d2a2a solid 1px;
 }
 
@@ -76,14 +91,19 @@ a:hover {
   color: white;
   background-color: rgb(233, 7, 7);
 }
-a:active {
+.active {
   color: red;
 }
+.container-about {
+  display: flex;
+  flex-direction: column;
+  max-width: 40vw;
+}
 section {
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50vw;
 }
 section > h3 {
   font-size: 1.2em;
@@ -102,12 +122,13 @@ section > p {
 }
 .image:hover {
   transition: 5s;
-  transform: translate(400px);
+  transform: translate(500px);
 }
 #image_3 {
   position: relative;
   top: 200px;
 }
+
 #contact {
   position: relative;
   top: -80px;
