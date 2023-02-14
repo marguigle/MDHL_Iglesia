@@ -86,6 +86,17 @@ nav {
   margin-left: 0;
   margin-right: 4vw;
 }
+.main-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.nav-contact {
+  display: flex;
+  width: 20vw;
+  margin-top: 10vh;
+}
 nav > a {
   text-decoration: none;
   background: #000;
@@ -152,7 +163,9 @@ section > p {
   top: 200px;
 }
 
-#contact {
-  position: relative;
-  top: -80px;
+.container-contact {
+  margin: 6vw 0 0 15vw;
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw;
 }
