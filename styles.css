@@ -27,8 +27,11 @@ h1 {
 }
 #imgLogo {
   height: 30vh;
-
+  border: #000 2px solid;
+  border-radius: 50%;
   align-self: flex-end;
+  margin-right: 2rem;
+  margin-top: 10vh;
 }
 .subtittle {
   background-color: black;
@@ -76,13 +79,13 @@ main {
   justify-content: flex-end;
 }
 
-.main-rules {
+/* .main-rules {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-start;
-}
+} */
 nav {
   width: 40px;
   display: flex;
@@ -152,7 +155,31 @@ a:hover {
   flex-direction: column;
   max-width: 50vw;
 }
+.container-rules-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
+.container-rules-2 {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10rem 10rem 10rem 10rem;
+}
+.container-rules-2 > p li h2 {
+  padding: 1rem;
+  margin: 5rem 0 5rem 0;
+  text-align: center;
+}
+.titulo-rules {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50vw;
+}
 section {
   width: auto;
   display: flex;
