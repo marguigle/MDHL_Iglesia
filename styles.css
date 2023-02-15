@@ -73,10 +73,14 @@ main {
 }
 
 .main-game-info {
+  margin: 5%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-end;
+  width: 80vw;
+  gap: 2rem;
+  align-content: center;
 }
 
 /* .main-rules {
@@ -94,20 +98,24 @@ nav {
   align-items: center;
   gap: 2rem;
 }
+
 .nav-about {
   display: flex;
   width: 20vw;
   justify-content: start;
+  margin-top: 10vh;
 }
 .nav-home {
   display: flex;
   width: 20vw;
   margin-top: 10vh;
+  margin-right: 20vw;
+  justify-content: start;
 }
-.nav-home > a {
+/* .nav-home > a {
   margin-left: 0;
   margin-right: 4vw;
-}
+} */
 
 .nav-contact {
   display: flex;
@@ -220,12 +228,21 @@ table,
 tr,
 th,
 td {
-  border: #000 2px solid;
+  border: #8cedae 2px solid;
+
   text-align: center;
   max-width: 60vw;
   background-color: rgb(23, 69, 69);
   color: aliceblue;
+  border-collapse: collapse;
+  padding: 1rem;
+  margin: 1rem;
 }
 thead {
-  background-color: rgb(11, 46, 46);
+  background-color: rgb(3, 36, 36);
+}
+footer {
+  width: 80vw;
+  margin: 10px;
+  padding: 1rem;
 }
