@@ -63,7 +63,18 @@ main {
   flex-direction: row;
   justify-content: flex-start;
 }
+.main-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
 
+.main-game-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 nav {
   width: 40px;
   display: flex;
@@ -85,11 +96,6 @@ nav {
 .nav-home > a {
   margin-left: 0;
   margin-right: 4vw;
-}
-.main-contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
 }
 
 .nav-contact {
