@@ -39,6 +39,10 @@ h1 {
   color: white;
   text-align: center;
 }
+/*arregler esto*/
+.subtittle:hover {
+  flex-grow: calc(4.3);
+}
 h2 {
   padding: 0.6rem;
 }
