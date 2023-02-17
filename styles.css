@@ -5,23 +5,25 @@
   font-family: "Comic Neue", cursive;
 }
 body {
+  width: 100vw;
   background-color: rgb(213, 215, 216);
+  display: flex;
+  flex-direction: column;
 }
 header {
+  width: 100vw;
   display: flex;
   justify-content: space-between;
-  background-image: url(./assets/design1_image1.jpg);
+  background: linear-gradient(rgba(5, 7, 12, 0.45), rgba(5, 7, 12, 0.45)),
+    url(./assets/design1_image1.jpg);
 
-  width: 100vw;
   height: 300px;
   background-size: cover;
 }
 h1 {
   color: white;
   padding: 10px 0 0 0px;
-  position: relative;
-  top: 20px;
-  left: 20px;
+
   font-size: 3rem;
   text-shadow: #000 0.1em 0.1em;
 }
@@ -48,8 +50,8 @@ h2 {
 }
 
 #imgLogo:hover {
-  transition: 2s;
-  transform: translate(-1000px);
+  transition: 3s;
+  transform: translate(-950px);
 }
 
 main {
@@ -58,6 +60,7 @@ main {
   flex-wrap: wrap;
 }
 .main-home {
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -109,7 +112,7 @@ nav {
 }
 .nav-home {
   display: flex;
-  width: 20vw;
+  /* width: 20vw; */
   margin-top: 10vh;
   margin-right: 20vw;
   justify-content: start;
@@ -141,7 +144,7 @@ nav > a {
   transition: 0.5s;
   border: #2d2a2a solid 1px;
 }
-/*media query*/
+/* inicio media query*/
 
 @media screen and (max-width: 427px) {
   .main-home {
@@ -205,6 +208,9 @@ nav > a {
     margin-top: 5%;
   }
 }
+
+/* final media queri*/
+
 .nav-form {
   display: flex;
   width: 20vw;
@@ -228,10 +234,12 @@ a:hover {
   max-width: 50vw;
 }
 .container-home {
-  margin: 6vw 0 0 15vw;
+  margin-top: 6vh;
+
+  /* margin: 6vw 0 0 15vw; */
   display: flex;
   flex-direction: column;
-  max-width: 50vw;
+  width: 50vw;
 }
 .container-rules-1 {
   display: flex;
@@ -273,8 +281,8 @@ section > p {
   font-size: 1.2em;
 }
 .image {
-  margin-top: 2em;
-  width: 500px;
+  margin-top: 3em;
+  width: 35vw;
   border: 3px solid black;
   border-radius: 3px;
   box-shadow: gray 0.4em 0.9em;
@@ -284,8 +292,7 @@ section > p {
   transform: translate(500px);
 }
 #image_3 {
-  position: relative;
-  top: 200px;
+  width: 40vw;
 }
 
 .container-contact {
@@ -295,6 +302,7 @@ section > p {
   max-width: 50vw;
 }
 table {
+  width: 50vw;
   border: #f5faf7 2px solid;
   border-radius: 15px;
 }
@@ -358,7 +366,7 @@ fieldset > p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(97, 97, 116);
+  background-color: linear-gradient(rgb(1, 28, 96), rgba(2, 22, 70));
   border: #2d2a2a solid 2px;
   border-radius: 5px;
   box-shadow: 4px 4px rgb(34, 40, 110);
@@ -368,4 +376,11 @@ fieldset > p {
 }
 .iframe {
   border-radius: 5px;
+}
+.main-game-info {
+  display: flex;
+}
+.game-info {
+  display: flex;
+  justify-content: space-between;
 }
