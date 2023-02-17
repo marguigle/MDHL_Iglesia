@@ -83,6 +83,11 @@ main {
   align-content: center;
 }
 
+.main-form {
+  display: flex;
+  justify-content: center;
+}
+
 /* .main-rules {
   display: flex;
   flex-wrap: wrap;
@@ -144,9 +149,66 @@ nav > a {
   border: #2d2a2a solid 1px;
 }
 
+@media screen and (max-width: 412px) {
+  .main-home {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav-home {
+    width: 100%;
+    margin-top: 10vh;
+
+    justify-content: center;
+  }
+  nav > a {
+    text-decoration: none;
+    background: #000;
+    transition: 1s;
+    width: 80%;
+    margin: 0 0 0 5vw;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    font: size 1.2em;
+    color: coral;
+    box-shadow: #615d5d 0.3em 0.5em;
+    transition: 0.5s;
+    border: #2d2a2a solid 1px;
+  }
+  #imgLogo {
+    height: 10vh;
+    border: #000 2px solid;
+    border-radius: 50%;
+    align-self: flex-end;
+    margin-right: 2rem;
+    margin-top: 10vh;
+  }
+  .image {
+    margin-top: 2em;
+    width: 80%;
+    border: 3px solid black;
+    border-radius: 3px;
+    box-shadow: gray 0.4em 0.9em;
+  }
+}
+
+.nav-form {
+  display: flex;
+  width: 20vw;
+  margin-top: 15vh;
+  margin-right: 15vw;
+  justify-content: start;
+}
+/* .nav-main-info {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+} */
 a:hover {
   color: white;
   background-color: rgb(233, 7, 7);
+  flex-grow: calc(0.1rem);
 }
 .active {
   color: red;
@@ -224,7 +286,11 @@ section > p {
   flex-direction: column;
   max-width: 50vw;
 }
-table,
+table {
+  border: #f5faf7 2px solid;
+  border-radius: 15px;
+}
+
 tr,
 th,
 td {
@@ -235,6 +301,7 @@ td {
   background-color: rgb(23, 69, 69);
   color: aliceblue;
   border-collapse: collapse;
+  border-radius: 15px;
   padding: 1rem;
   margin: 1rem;
 }
@@ -245,4 +312,39 @@ footer {
   width: 80vw;
   margin: 10px;
   padding: 1rem;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 50vw;
+  border: #000 2px solid;
+  border-radius: 4px;
+  box-shadow: #2d2a2a 3px 3px;
+  background-color: rgb(240, 240, 189);
+  margin-right: 10vw;
+  margin-top: 5vw;
+  margin-bottom: 10vh;
+  padding: 0.7rem;
+}
+fieldset {
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: #9cfabd;
+  box-shadow: #615d5d 4px 4px;
+}
+fieldset > p {
+  padding: 0.5rem;
+}
+.mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(14, 14, 231);
+  border: #2d2a2a solid 2px;
+  border-radius: 5px;
+}
+.mapa-1.mapa-2 .mapa-3 .mapa-4 {
+  margin-top: 30px;
 }
